@@ -8,12 +8,11 @@ int main(){
 
     do {
         scanf("%d", &num);
-        for (i=1; i<1000000; i++) {
-            if(num>=0 && num<menor){
-                menor=num;
-            } else if (num>maior){
-                maior=num;
-            }
+
+        if(num>=0 && num<menor){
+            menor=num;
+        } else if (num>maior){
+            maior=num;
         }
     }
     while (!(num<0));

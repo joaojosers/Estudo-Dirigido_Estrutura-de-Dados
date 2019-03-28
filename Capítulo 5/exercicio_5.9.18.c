@@ -13,6 +13,9 @@ int main(){
     printf("num = %d\n",num);
     
     for (i=2; i<=num;) {
+        
+        printf("%d\n", i);
+        
         if (num%i==0){
             i++; 
             if (num%i==0) {
