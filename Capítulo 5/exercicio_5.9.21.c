@@ -4,7 +4,7 @@
 
 int main() {
 
-    int aux, n=0, num, i, j, qtd=0,maior=-1000000;
+    int n=0, num, i, qtd=0,maior=-1000000;
 
     printf("digite um numero inteiro positivo\n");
     do{
