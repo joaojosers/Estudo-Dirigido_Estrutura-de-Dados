@@ -4,17 +4,29 @@
 
 int main() {
 
-    int i, vet[8], soma=0;
-    printf("digite oito numeros inteiros de 1 a 8\n");
+    int vet[8], soma=0;
+    int i, X, Y;
+    printf("digite oito numeros\n");
     
     for (i=0;i<=7; i++){
         scanf("%d", &vet[i]);
-        printf("%d\t", vet[i]);
     }
-    printf("\n%d\t%d\n", vet[1], vet[7]);
+    printf("digite um numero inteiro\n");
+    
+    do {
+      scanf("%d",&X);  
+    }while (!(X >=0 && X <=7));
+    
+    printf("digite outro numero inteiro\n");
+    
+    do {
+        scanf("%d",&Y);
+    }while (Y==X || !(Y >=0 && Y <=7));
+    
+    
    
 
-    soma = vet[1] + vet[7];
+    soma = vet[X] + vet[Y];
     printf("soma = %d\n", soma);
 
     return 0;
